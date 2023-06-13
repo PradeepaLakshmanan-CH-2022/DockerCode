@@ -1,0 +1,16 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      terraform: 1.4.6
+  pre_build:
+    commands:
+      - terraform init
+  build:
+    commands:
+    
+      - terraform plan 
+  post_build:
+    commands:
+      - terraform apply 
