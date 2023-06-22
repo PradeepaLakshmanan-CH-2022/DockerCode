@@ -1,17 +1,19 @@
 version: 0.0
 os: windows
 files:
-  - source: index.html
-    destination: C:\inetpub\wwwroot\
+  - source: /index.html
+    destination: /var/www/html/
+
 hooks:
   BeforeInstall:
-    - location: scripts/install_dependencies.bat
+    - location: scripts/install_dependencies
       timeout: 300
       runas: Administrator
-    - location: scripts/start_server.bat
+  AfterInstall:
+    - location: scripts/start_server
       timeout: 300
       runas: Administrator
   ApplicationStop:
-    - location: scripts/stop_server.bat
+    - location: scripts/stop_server
       timeout: 300
       runas: Administrator
