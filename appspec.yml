@@ -1,19 +1,17 @@
 version: 0.0
 os: windows
 files:
-  - source: /index.html
-    destination: /var/www/html/
-
+  - source: /
+    destination: C:\inetpub\wwwroot
+permissions:
+  - object: C:\inetpub\wwwroot
+    pattern: "**"
+    owner: Administrators
+    group: Administrators
 hooks:
   BeforeInstall:
-    - location: scripts/install_dependencies.bat
-      timeout: 300
-      runas: Administrator
+    - location: scripts/beforeinstall.ps1
   AfterInstall:
-    - location: scripts/start_server.bat
-      timeout: 300
-      runas: Administrator
-  ApplicationStop:
-    - location: scripts/stop_server.bat
-      timeout: 300
-      runas: Administrator
+    - location: scripts/afterinstall.ps1
+  ApplicationStart:
+    - location: scripts/applicationstart.ps1
