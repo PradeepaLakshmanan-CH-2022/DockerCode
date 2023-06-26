@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Pradeepa.lakshmanan\\source\\repos\\PipelineTesting\\PipelineTesting\\PipelineTesting.csproj": {}
+    "C:\\MyCode\\DockerCode\\PipelineTesting\\PipelineTesting.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Pradeepa.lakshmanan\\source\\repos\\PipelineTesting\\PipelineTesting\\PipelineTesting.csproj": {
+    "C:\\MyCode\\DockerCode\\PipelineTesting\\PipelineTesting.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Pradeepa.lakshmanan\\source\\repos\\PipelineTesting\\PipelineTesting\\PipelineTesting.csproj",
+        "projectUniqueName": "C:\\MyCode\\DockerCode\\PipelineTesting\\PipelineTesting.csproj",
         "projectName": "PipelineTesting",
-        "projectPath": "C:\\Users\\Pradeepa.lakshmanan\\source\\repos\\PipelineTesting\\PipelineTesting\\PipelineTesting.csproj",
+        "projectPath": "C:\\MyCode\\DockerCode\\PipelineTesting\\PipelineTesting.csproj",
         "packagesPath": "C:\\Users\\Pradeepa.lakshmanan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Pradeepa.lakshmanan\\source\\repos\\PipelineTesting\\PipelineTesting\\obj\\",
+        "outputPath": "C:\\MyCode\\DockerCode\\PipelineTesting\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Pradeepa.lakshmanan\\AppData\\Roaming\\NuGet\\NuGet.Config",
