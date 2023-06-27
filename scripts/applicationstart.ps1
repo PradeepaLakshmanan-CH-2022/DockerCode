@@ -1,5 +1,5 @@
-# Restart IIS Application Pool
-Restart-WebAppPool -Name "DefaultAppPool"
+# Example content for the 'ApplicationStart' hook
+# Perform any necessary actions to start the application
 
-# Restart Windows Service
-Restart-Service -Name "DockerCode"
+# Start the application or services
+Start-Service -Name "Agent Activation Runtime_26d52c"

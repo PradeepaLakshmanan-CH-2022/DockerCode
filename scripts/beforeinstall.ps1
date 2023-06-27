@@ -1,5 +1,5 @@
-# Stop IIS Application Pool
-Stop-WebAppPool -Name "DefaultAppPool"
+# Example content for the 'BeforeInstall' hook
+# Perform any necessary actions before installing the application
 
-# Stop Windows Service
-Stop-Service -Name "DockerCode"
+# Stop the existing application or services if required
+Stop-Service -Name "Agent Activation Runtime_26d52c" -Force
