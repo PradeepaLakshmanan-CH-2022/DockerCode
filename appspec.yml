@@ -3,15 +3,16 @@ os: windows
 files:
   - source: /
     destination: C:\inetpub\wwwroot
-permissions:
-  - object: C:\inetpub\wwwroot
-    pattern: "**"
-    owner: Administrators
-    group: Administrators
 hooks:
   BeforeInstall:
-    - location: scripts/beforeinstall.ps1
+    - location: scripts\before_install.ps1
+      timeout: 300
   AfterInstall:
-    - location: scripts/afterinstall.ps1
+    - location: scripts\after_install.ps1
+      timeout: 300
   ApplicationStart:
-    - location: scripts/applicationstart.ps1
+    - location: scripts\application_start.ps1
+      timeout: 300
+  ValidateService:
+    - location: scripts\validate_service.ps1
+      timeout: 300
