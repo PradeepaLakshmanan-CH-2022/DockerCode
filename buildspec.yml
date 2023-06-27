@@ -5,10 +5,10 @@ phases:
     runtime-versions:
       dotnet: 6.0
     commands:
-      - echo Installing .NET 6 SDK
-      - wget https://download.visualstudio.microsoft.com/download/pr/09157c4e-a3b0-4417-a1c6-8aeb50d50fba/7e19de0578a69b45f88ee8c261d573a3/dotnet-sdk-6.0.100-preview.7.21379.14-linux-x64.tar.gz
-      - tar -xzvf dotnet-sdk-6.0.100-preview.7.21379.14-linux-x64.tar.gz -C /opt/dotnet
-      - export PATH="/opt/dotnet:$PATH"
+     
+  - echo Downloading .NET 6 SDK
+  - curl -O https://download.visualstudio.microsoft.com/download/pr/09157c4e-a3b0-4417-a1c6-8aeb50d50fba/7e19de0578a69b45f88ee8c261d573a3/dotnet-sdk-6.0.100-preview.7.21379.14-linux-x64.tar.gz
+
 
   pre_build:
     commands:
