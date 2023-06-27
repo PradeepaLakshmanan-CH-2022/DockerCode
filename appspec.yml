@@ -6,6 +6,9 @@ files:
     destination: C:\inetpub\wwwroot\myapp
 
 hooks:
-  ApplicationStart:
+  BeforeInstall:
+    - location: scripts\stop_server.ps1
+      timeout: 300
+  AfterInstall:
     - location: scripts\start_server.ps1
       timeout: 300

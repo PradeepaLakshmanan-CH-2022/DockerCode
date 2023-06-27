@@ -1,5 +1,2 @@
-# Navigate to the application directory
-Set-Location -Path "C:\inetpub\wwwroot\myapp"
-
-# Execute the .NET application
-dotnet PipelineTesting.dll
+# Start the API application
+Start-Process -FilePath "C:\inetpub\wwwroot\myapp\MyApiApp.exe" -NoNewWindow
