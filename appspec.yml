@@ -3,12 +3,13 @@ os: windows
 
 files:
   - source: /
-    destination: C:\inetpub\wwwroot\myapp
+    destination: C:\inetpub\wwwroot\myapi
 
 hooks:
   BeforeInstall:
-    - location: scripts\stop_server.ps1
-      timeout: 300
+    - location: scripts\before-install.ps1
+
   AfterInstall:
-    - location: scripts\start_server.ps1
-      timeout: 300
+    - location: scripts\after-install.ps1
+
+
