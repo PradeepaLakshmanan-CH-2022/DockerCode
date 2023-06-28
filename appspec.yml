@@ -2,7 +2,7 @@ version: 0.0
 os: windows
 
 files:
-  - source: /
+  - source: .
     destination: C:\inetpub\wwwroot\myapi
 
 hooks:
@@ -12,4 +12,5 @@ hooks:
   AfterInstall:
     - location: scripts\after-install.ps1
 
-
+  ApplicationStart:
+    - location: scripts\application-start.ps1
